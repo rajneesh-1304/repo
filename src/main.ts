@@ -10,7 +10,7 @@ async function bootstrap() {
   app.use('/uploads', express.static('uploads'));
 
   app.enableCors({
-    origin: 'http://localhost:3000',
+    origin: "*",
   });
   app.useGlobalPipes(
     new ValidationPipe({
